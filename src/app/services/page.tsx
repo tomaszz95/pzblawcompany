@@ -1,3 +1,5 @@
+import Header from '../../components/header/Header'
+
 export const metadata = {
     title: 'PZB Law Firm | Services',
     description:
@@ -5,7 +7,11 @@ export const metadata = {
 }
 
 const ServicesPage = () => {
-    return <main>a</main>
+    return (
+        <main>
+            <Header text="The scope of services provided" site="services" buttonText="More about services" />
+        </main>
+    )
 }
 
 export default ServicesPage

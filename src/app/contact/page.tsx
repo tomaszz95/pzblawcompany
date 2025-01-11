@@ -1,3 +1,5 @@
+import Header from '../../components/header/Header'
+
 export const metadata = {
     title: 'PZB Law Firm | Contact',
     description:
@@ -5,7 +7,11 @@ export const metadata = {
 }
 
 const ContactPage = () => {
-    return <main>a</main>
+    return (
+        <main>
+            <Header text="Get in touch with us" site="contact" buttonText="Email us directly" />
+        </main>
+    )
 }
 
 export default ContactPage
