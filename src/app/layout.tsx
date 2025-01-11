@@ -1,13 +1,12 @@
-import { Playfair_Display } from 'next/font/google'
+import { Merriweather } from 'next/font/google'
 
-import Navigation from '../components/navigation/Navigation'
 import Footer from '../components/footer/Footer'
 
 import '../styles/globals.css'
 
-const playfair = Playfair_Display({
+const merriweather = Merriweather({
     subsets: ['latin'],
-    weight: ['400', '500', '600', '700', '900'],
+    weight: ['300', '400', '700', '900'],
     style: ['normal', 'italic'],
 })
 
@@ -23,9 +22,8 @@ export default function RootLayout({
     children: React.ReactNode
 }>) {
     return (
-        <html lang="en" className={playfair.className}>
+        <html lang="en" className={merriweather.className}>
             <body>
-                <Navigation />
                 {children}
                 <Footer />
             </body>

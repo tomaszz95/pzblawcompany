@@ -1,0 +1,72 @@
+.burger {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.burgerBar {
+    position: relative;
+    width: 2rem;
+    height: 0.25em;
+    background-color: var(--main-color);
+    transition: transform 0.3s;
+}
+
+.burger.active .burgerBar {
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+.burger.active .burgerBar:nth-child(1) {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.burger.active .burgerBar:nth-child(2) {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.burger.active .burgerBar:nth-child(3) {
+    opacity: 0;
+}
+
+.mobileNav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+    height: 100%;
+    background-color: var(--pure-white);
+    z-index: 100;
+}
+
+.mobileLink a {
+    font-size: 1.6rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: var(--pure-black);
+}
+
+.mobileLink a:hover {
+    color: var(--main-color);
+}
+
+@media (min-width: 786px) {
+    .burger,
+    .mobileNav {
+        display: none;
+    }
+}
