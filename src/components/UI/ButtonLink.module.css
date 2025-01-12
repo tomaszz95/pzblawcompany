@@ -1,0 +1,41 @@
+.button {
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 10px;
+    color: var(--pure-white);
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    transition:
+        color 0.3s,
+        background-color 0.3s;
+}
+
+.button:hover {
+    color: var(--main-color);
+    background-color: transparent;
+}
+
+.button.reverse {
+    color: var(--main-color);
+    background-color: transparent;
+}
+
+.button.reverse:hover {
+    color: var(--pure-white);
+    background-color: var(--main-color);
+}
+
+@media (min-width: 786px) {
+    .button {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 1100px) {
+    .button {
+        font-size: 1.15rem;
+    }
+}

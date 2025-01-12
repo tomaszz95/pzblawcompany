@@ -62,12 +62,12 @@ h1 {
 }
 
 h2 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     letter-spacing: 2px;
 }
 
 h3 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     letter-spacing: 1px;
 }
 
@@ -81,11 +81,11 @@ section {
     }
 
     h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     h3 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 }
 
@@ -95,11 +95,11 @@ section {
     }
 
     h2 {
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
 
     h3 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     section {
@@ -113,10 +113,10 @@ section {
     }
 
     h2 {
-        font-size: 2.4rem;
+        font-size: 2.2rem;
     }
 
     h3 {
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
 }
