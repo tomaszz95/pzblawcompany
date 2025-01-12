@@ -1,4 +1,6 @@
 import Header from '../components/header/Header'
+import IntroductionSection from '../components/homepage/introductionSection/IntroductionSection'
+import CompanyOverviewSection from '../components/homepage/companyOverview/CompanyOverviewSection'
 
 export const metadata = {
     title: 'PZB Law Firm | Homepage',
@@ -10,6 +12,8 @@ const Homepage = () => {
     return (
         <main>
             <Header text="We got solution for your problem!" site="homepage" buttonText="More informations" />
+            <IntroductionSection />
+            <CompanyOverviewSection />
         </main>
     )
 }

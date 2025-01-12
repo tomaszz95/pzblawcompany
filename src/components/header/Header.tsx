@@ -1,5 +1,5 @@
-import Link from 'next/link'
 import Navigation from './navigation/Navigation'
+import ButtonLink from '../UI/ButtonLink'
 
 import styles from './Header.module.css'
 
@@ -31,7 +31,9 @@ const Header = ({ text, site, buttonText }: ComponentType) => {
                 <div className={styles.text}>
                     <p>PZB Law Company in New York</p>
                     <h1 className={styles.heading}>{text}</h1>
-                    <Link href="#firstsection">{buttonText} &darr;</Link>
+                    <ButtonLink linkUrl="#firstsection" ariaLabel="Click to see more informations" reverse={true}>
+                        {buttonText} &darr;
+                    </ButtonLink>
                 </div>
             </div>
         </header>

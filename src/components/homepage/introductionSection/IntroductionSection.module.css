@@ -1,0 +1,40 @@
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    gap: 4rem;
+    padding: 1rem;
+}
+
+.imageBox {
+    position: relative;
+    display: none;
+}
+
+.imageBox img {
+    height: 600px;
+    width: auto;
+}
+
+.imageShadow {
+    position: absolute;
+    top: -8%;
+    right: -12%;
+    width: 70%;
+    height: 115%;
+    background-color: rgba(177, 151, 107, 0.15);
+    z-index: -1;
+}
+
+@media (min-width: 1100px) {
+    .imageBox {
+        display: block;
+    }
+}

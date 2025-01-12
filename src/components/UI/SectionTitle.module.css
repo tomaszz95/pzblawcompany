@@ -1,0 +1,26 @@
+.titleBox {
+    display: flex;
+    justify-content: center;
+    align-self: start;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 2rem;
+}
+
+.titleBox.center {
+    justify-content: center;
+}
+
+.title {
+    color: var(--main-color);
+}
+
+.underline {
+    width: 40%;
+    height: 2px;
+    background-color: var(--main-color-hover);
+}
+
+.title.reverse {
+    color: var(--pure-white);
+}
