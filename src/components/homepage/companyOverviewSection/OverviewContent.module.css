@@ -1,0 +1,51 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.textBox {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.textItem {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    animation: frombottom 1s forwards;
+    opacity: 0;
+}
+
+.textItem h3 {
+    color: var(--pure-white);
+}
+
+.textItem p {
+    color: rgb(240, 224, 224);
+}
+
+@media (min-width: 1100px) {
+    .content {
+        width: 45%;
+    }
+    .textBox {
+        gap: 3rem;
+    }
+}
+
+@keyframes frombottom {
+    0% {
+        opacity: 0;
+        transform: translate(0, 300%);
+    }
+    70% {
+        opacity: 1;
+        transform: translate(0, -10%);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0%, 0%);
+    }
+}

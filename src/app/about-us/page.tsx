@@ -1,7 +1,7 @@
 import Header from '../../components/header/Header'
 
 export const metadata = {
-    title: 'PZB Law Firm | About us',
+    title: 'PZB Law Company | About us',
     description:
         'Providing exceptional legal services across various practice areas, including corporate law, family law, real estate, and litigation. Our team of experienced attorneys is dedicated to delivering tailored solutions with professionalism and integrity.',
 }
