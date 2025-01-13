@@ -3,12 +3,13 @@
     justify-content: center;
     align-self: start;
     flex-direction: column;
-    gap: 5px;
+    gap: 1rem;
     margin-bottom: 2rem;
 }
 
 .titleBox.center {
-    justify-content: center;
+    align-self: center;
+    align-items: center;
 }
 
 .title {

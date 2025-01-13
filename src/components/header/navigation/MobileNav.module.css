@@ -1,4 +1,5 @@
-.burger {
+.burger,
+.burgerX {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -17,25 +18,6 @@
     width: 2rem;
     height: 0.25em;
     background-color: var(--main-color);
-    transition: transform 0.3s;
-}
-
-.burger.active .burgerBar {
-    position: absolute;
-    top: 50%;
-    left: 0;
-}
-
-.burger.active .burgerBar:nth-child(1) {
-    transform: translate(-50%, -50%) rotate(45deg);
-}
-
-.burger.active .burgerBar:nth-child(2) {
-    transform: translate(-50%, -50%) rotate(-45deg);
-}
-
-.burger.active .burgerBar:nth-child(3) {
-    opacity: 0;
 }
 
 .mobileNav {
@@ -50,7 +32,7 @@
     width: 100%;
     height: 100%;
     background-color: var(--pure-white);
-    z-index: 100;
+    z-index: 999;
 }
 
 .mobileLink a {
@@ -64,9 +46,34 @@
     color: var(--main-color);
 }
 
+.burgerX {
+    position: absolute;
+    top: 2.5rem;
+    right: 2rem;
+}
+
+.burgerX.active .burgerBar {
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+.burgerX.active .burgerBar:nth-child(1) {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.burgerX.active .burgerBar:nth-child(2) {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.burgerX.active .burgerBar:nth-child(3) {
+    opacity: 0;
+}
+
 @media (min-width: 786px) {
     .burger,
-    .mobileNav {
+    .mobileNav,
+    .burgerX {
         display: none;
     }
 }
