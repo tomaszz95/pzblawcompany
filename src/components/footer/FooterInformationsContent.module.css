@@ -1,0 +1,54 @@
+.informationsContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.6rem;
+    width: 100%;
+}
+
+.companyLogoBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.companyLogoBox img {
+    width: 80px;
+    height: 80px;
+}
+
+.companyLogoBox span {
+    font-size: 1.2rem;
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+.informationsContent p {
+    font-weight: 300;
+}
+
+.iconsBox {
+    display: flex;
+    gap: 2rem;
+}
+
+.iconsBox a {
+    transition: scale 0.3s;
+}
+
+.iconsBox img {
+    width: 30px;
+    height: 30px;
+}
+
+.iconsBox a:hover {
+    scale: 1.2;
+}
+
+@media (min-width: 1100px) {
+    .informationsContent {
+        width: 40%;
+    }
+}

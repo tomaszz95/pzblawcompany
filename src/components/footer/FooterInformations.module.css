@@ -1,0 +1,105 @@
+.informationsBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem;
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    animation: fromcenter 1s;
+}
+
+.informationsBoxMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footerTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+.footerTitle h4 {
+    color: var(--main-color);
+    font-size: 1.3rem;
+}
+
+.footerTitle div {
+    width: 80px;
+    height: 2px;
+    background-color: var(--main-color-hover);
+}
+
+.footerList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 1.1rem;
+}
+
+.footerList a:hover {
+    text-decoration: underline;
+}
+
+.footerListItem {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.footerListItem span {
+    font-weight: bold;
+}
+
+@media (min-width: 786px) {
+    .informationsBoxMenu {
+        flex-direction: row;
+        align-items: start;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .menuBox,
+    .companyAddress,
+    .contactData {
+        width: 32%;
+    }
+
+    .footerTitle h4 {
+        font-size: 1.4rem;
+    }
+
+    .footerList {
+        gap: 0.5rem;
+    }
+}
+
+@media (min-width: 1100px) {
+    .informationsBox {
+        flex-direction: row;
+        gap: 2rem;
+        padding: 5rem 3rem;
+    }
+}
+
+@keyframes fromcenter {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
