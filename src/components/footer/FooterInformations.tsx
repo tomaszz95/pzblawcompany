@@ -58,10 +58,7 @@ const FooterInformations = () => {
                         </p>
                         <p className={styles.footerListItem}>
                             <span>Email office:</span>{' '}
-                            <Link
-                                href="mailto:pzblawoffice@gmail.com"
-                                aria-label="Email to PZB Law Company office"
-                            >
+                            <Link href="mailto:pzblawoffice@gmail.com" aria-label="Email to PZB Law Company office">
                                 pzblawoffice@gmail.com
                             </Link>
                         </p>
