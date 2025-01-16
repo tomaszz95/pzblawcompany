@@ -1,4 +1,6 @@
+import ConsultationSection from '@/components/teamPage/consultationSection/ConsultationSection'
 import Header from '../../components/header/Header'
+import MembersSection from '../../components/teamPage/membersSection/MembersSection'
 
 export const metadata = {
     title: 'PZB Law Company | Team',
@@ -10,6 +12,8 @@ const TeamPage = () => {
     return (
         <main>
             <Header text="Meet our professional team!" site="team" buttonText="More about members" />
+            <MembersSection />
+            <ConsultationSection />
         </main>
     )
 }
