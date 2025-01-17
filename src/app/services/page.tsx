@@ -1,5 +1,6 @@
 import Header from '../../components/header/Header'
 import ServicesSection from '../../components/servicesPage/servicesSection/ServicesSection'
+import OperateSection from '../../components/servicesPage/operateSection/OperateSection'
 
 export const metadata = {
     title: 'PZB Law Company | Services',
@@ -12,6 +13,7 @@ const ServicesPage = () => {
         <main>
             <Header text="The scope of services provided" site="services" buttonText="More about services" />
             <ServicesSection />
+            <OperateSection />
         </main>
     )
 }
