@@ -4,6 +4,7 @@ import SingleService from './SingleService'
 import servicesList from '../../../constants/servicesList'
 
 import styles from './ServicesSection.module.css'
+
 const ServicesSection = () => {
     return (
         <section className={styles.section} id="firstsection">
