@@ -14,7 +14,7 @@ const CompetencesBox = () => {
             <SectionTitle>Passion, Professionalism, Dedication</SectionTitle>
             <div className={styles.content}>
                 <p className={styles.contentText}>
-                    At our law firm, the work doesn't end with the filing of documents or court hearings. It is
+                    At our law firm, the work doesn&apos;t end with the filing of documents or court hearings. It is
                     dedication, passion and a relentless pursuit of the best results for our clients that drive us every
                     day. Regardless of the scale of the problem, we take on every case with full commitment and
                     determination, ready to face even the most difficult challenges.

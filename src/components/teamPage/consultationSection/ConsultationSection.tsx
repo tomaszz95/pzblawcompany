@@ -13,7 +13,7 @@ const ConsultationSection = () => {
                 </SectionTitle>
                 <div className={styles.content}>
                     <p>
-                        Don't wait any longer - take advantage of our free consultation and start the process of
+                        Don&apos;t wait any longer - take advantage of our free consultation and start the process of
                         resolving your legal issues now. Our team is waiting to provide you with professional and
                         effective assistance.
                     </p>

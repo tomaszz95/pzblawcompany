@@ -14,7 +14,7 @@ const ClientOpinion = ({ name, opinion, photo }: ComponentType) => {
     return (
         <div className={styles.opinionBox}>
             <Image src={QuoteIcon} alt="" />
-            <p>"{opinion}"</p>
+            <p>&quot;{opinion}&quot;</p>
             <div className={styles.opinionContent}>
                 <Image src={photo} alt={`${name} photo`} />
                 <span>{name}</span>

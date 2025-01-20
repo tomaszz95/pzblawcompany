@@ -8,7 +8,7 @@ const useInput = (validateValue: (value: string) => boolean, initialValue: strin
     const hasError = !valueIsValid && isTouched
 
     const valueChangeHandler = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-        let inputValue = event.target.value
+        const inputValue = event.target.value
 
         setValue(inputValue)
     }
