@@ -6,6 +6,7 @@
     --main-color-hover: rgb(146, 122, 79);
     --secondary-color: rgb(67, 64, 54);
     --shadow: rgba(22, 18, 7, 0.8);
+    --danger-color: rgba(233, 21, 21, 0.8);
 }
 
 *,

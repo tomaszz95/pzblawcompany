@@ -1,0 +1,17 @@
+.textarea {
+    padding: 0.8rem 1rem;
+    margin: 1.4rem 0 0.3rem;
+    width: 100%;
+    min-height: 250px;
+    max-height: 500px;
+    min-width: 100%;
+    max-width: 100%;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    border: 1px solid rgb(212, 212, 212);
+    border-bottom: 2px solid var(--main-color);
+}
+
+.textarea.error {
+    border: 1px solid var(--danger-color);
+}

@@ -1,4 +1,6 @@
 import Header from '../../components/header/Header'
+import ContactFormSection from '../../components/contactPage/contactFormSection/ContactFormSection'
+import MapSection from '../../components/contactPage/mapSection/MapSection'
 
 export const metadata = {
     title: 'PZB Law Company | Contact',
@@ -10,6 +12,8 @@ const ContactPage = () => {
     return (
         <main>
             <Header text="Get in touch with us" site="contact" buttonText="Email us directly" />
+            <ContactFormSection />
+            <MapSection />
         </main>
     )
 }
