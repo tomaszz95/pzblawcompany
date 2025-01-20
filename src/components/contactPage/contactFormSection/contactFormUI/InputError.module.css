@@ -1,0 +1,21 @@
+.errorBox {
+    display: flex;
+    align-items: center;
+}
+
+.errorBox img {
+    width: 24px;
+    height: 24px;
+}
+
+.errorBox p {
+    margin-left: 0.4rem;
+    font-size: 0.9rem;
+    color: var(--danger-color);
+}
+
+@media (768px < width) {
+    .errorBox p {
+        font-size: 0.95rem;
+    }
+}
