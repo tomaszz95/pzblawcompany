@@ -39,8 +39,13 @@ const useSubmitForm = <T,>({ validateForm, resetForm, errorMessage }: ComponentT
             setIsModalVisible(true)
             setIsSubmitting(false)
             resetForm()
-        } catch (err: any) {
-            const errorMessage = err.response?.data?.error || err.message || 'An unexpected error occurred'
+        } catch (err: unknown) {
+            const errorMessage =
+                axios.isAxiosError(err) && err.response?.data?.error
+                    ? err.response.data.error
+                    : err instanceof Error
+                      ? err.message
+                      : 'An unexpected error occurred'
 
             setServerError(errorMessage)
             setIsSubmitting(false)
