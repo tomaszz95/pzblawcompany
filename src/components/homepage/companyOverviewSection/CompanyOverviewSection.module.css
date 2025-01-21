@@ -24,10 +24,10 @@
     justify-content: center;
     align-items: start;
     flex-direction: column;
+    gap: 2rem;
     padding: 1rem;
     width: 100%;
     max-width: 1200px;
-    gap: 2rem;
     z-index: 5;
 }
 

@@ -29,8 +29,8 @@
 }
 
 .footerTitle h4 {
-    color: var(--main-color);
     font-size: 1.3rem;
+    color: var(--main-color);
 }
 
 .footerTitle div {

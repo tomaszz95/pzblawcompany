@@ -1,4 +1,4 @@
-import NotFoundPageSection from '../components/notFound/NotFoundPageSection'
+import Header from '../components/header/Header'
 
 export const metadata = {
     title: 'PZB Law Firm | Not Found',
@@ -9,7 +9,7 @@ export const metadata = {
 const NotFoundPage = () => {
     return (
         <main>
-            <NotFoundPageSection />
+            <Header text="Ops... This site doesn't exist..." site="notfound" buttonText="Go to homepage" />
         </main>
     )
 }

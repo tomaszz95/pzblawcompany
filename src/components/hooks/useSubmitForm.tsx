@@ -1,5 +1,7 @@
 import { useState } from 'react'
 
+import axios from 'axios'
+
 type ComponentType<T> = {
     validateForm: () => boolean
     resetForm: () => void
@@ -27,33 +29,20 @@ const useSubmitForm = <T,>({ validateForm, resetForm, errorMessage }: ComponentT
             setIsSubmitting(false)
             return
         }
-
         try {
-            const response = await fetch(FORMSPREE_URL!, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(formData),
-            })
+            const response = await axios.post(FORMSPREE_URL!, formData)
 
-            if (!response.ok) {
+            if (response.status !== 200) {
                 throw new Error('Something went wrong. Please try again later.')
             }
 
             setIsModalVisible(true)
             setIsSubmitting(false)
             resetForm()
+        } catch (err: any) {
+            const errorMessage = err.response?.data?.error || err.message || 'An unexpected error occurred'
 
-            setTimeout(() => {
-                setIsModalVisible(false)
-
-                window.location.reload()
-            }, 2400)
-        } catch (err: unknown) {
-            const errorMessage = err instanceof Error ? err.message : 'An unexpected error occurred'
-
-            setServerError(errorMessage || 'Something went wrong. Please try again later.')
+            setServerError(errorMessage)
             setIsSubmitting(false)
             setIsModalVisible(true)
         }
