@@ -67,8 +67,19 @@ const ContactForm = () => {
         },
     )
 
+    const formSubmitHandler = (event: React.FormEvent) => {
+        const formData = {
+            firstName: enteredFirstName,
+            surname: enteredSurname,
+            email: enteredEmail,
+            message: enteredMessage,
+        }
+
+        submitHandler(event, formData)
+    }
+
     return (
-        <form className={styles.contactForm} onSubmit={submitHandler}>
+        <form className={styles.contactForm} onSubmit={formSubmitHandler}>
             <Input
                 label="Name"
                 id="firstName"
@@ -109,7 +120,11 @@ const ContactForm = () => {
                 errorText="The message must be at least 10 characters long."
             />
 
-            <span className={styles.messageLength}>{enteredMessage.length}/1000</span>
+            <span
+                className={`${styles.messageLength} ${enteredMessage.length > 10 ? styles.enough : styles.notenough}`}
+            >
+                {enteredMessage.length}/1000
+            </span>
 
             <button type="submit" disabled={!formIsValid && !isSubmitting} className={styles.submitBtn}>
                 Send message
@@ -117,7 +132,7 @@ const ContactForm = () => {
 
             {!firstLoading && isModalVisible && (
                 <Modal isVisible={isModalVisible} onAnimationEnd={() => setIsModalVisible(false)}>
-                    {serverError ? serverError : `You&apos;ve successfully sent a message!`}
+                    {serverError ? serverError : `You have successfully sent a message!`}
                 </Modal>
             )}
         </form>

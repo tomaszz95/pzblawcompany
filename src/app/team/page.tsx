@@ -1,6 +1,6 @@
-import ConsultationSection from '@/components/teamPage/consultationSection/ConsultationSection'
 import Header from '../../components/header/Header'
 import MembersSection from '../../components/teamPage/membersSection/MembersSection'
+import ConsultationSection from '../../components/teamPage/consultationSection/ConsultationSection'
 
 export const metadata = {
     title: 'PZB Law Company | Team',

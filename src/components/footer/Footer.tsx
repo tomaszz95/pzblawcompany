@@ -1,5 +1,6 @@
-import styles from './Footer.module.css'
 import FooterInformations from './FooterInformations'
+
+import styles from './Footer.module.css'
 
 const Footer = () => {
     const currentYear = new Date().getFullYear()

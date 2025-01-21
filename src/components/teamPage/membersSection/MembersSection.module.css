@@ -9,8 +9,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 1300px;
     gap: 2rem;
+    max-width: 1300px;
 }
 
 .box {

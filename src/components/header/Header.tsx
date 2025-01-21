@@ -19,7 +19,11 @@ const Header = ({ text, site, buttonText }: ComponentType) => {
                 ? styles.contact
                 : site === 'team'
                   ? styles.team
-                  : styles.aboutus
+                  : site === 'notfound'
+                    ? styles.notfound
+                    : styles.aboutus
+
+    const linkUrl = site === 'notfound' ? '/' : '#firstsection'
 
     return (
         <header className={styles.header}>
@@ -29,9 +33,15 @@ const Header = ({ text, site, buttonText }: ComponentType) => {
                     <Navigation />
                 </nav>
                 <div className={styles.text}>
-                    <p>PZB Law Company in New York</p>
+                    {site !== 'notfound' && <p>PZB Law Company in New York</p>}
                     <h1 className={styles.heading}>{text}</h1>
-                    <ButtonLink linkUrl="#firstsection" ariaLabel="Click to see more informations" reverse={true}>
+                    {site === 'notfound' && (
+                        <p className={styles.notfoundText}>
+                            It looks like nothing was found in this location. Check that you are sure you have entered
+                            the correct site address!
+                        </p>
+                    )}
+                    <ButtonLink linkUrl={linkUrl} ariaLabel="Click to see more informations" reverse={true}>
                         {buttonText} &darr;
                     </ButtonLink>
                 </div>

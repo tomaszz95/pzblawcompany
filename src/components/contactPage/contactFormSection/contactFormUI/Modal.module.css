@@ -16,11 +16,7 @@
 }
 
 .modal.slideIn {
-    animation: slideIn 1.5s forwards;
-}
-
-.modal.slideOut {
-    animation: slideOut 1.5s forwards;
+    animation: slideIn 2s forwards;
 }
 
 @keyframes slideIn {
@@ -31,16 +27,5 @@
     to {
         transform: translate(-50%, 20px);
         opacity: 1;
-    }
-}
-
-@keyframes slideOut {
-    from {
-        transform: translate(-50%, 20px);
-        opacity: 1;
-    }
-    to {
-        transform: translate(-50%, -100%);
-        opacity: 0;
     }
 }

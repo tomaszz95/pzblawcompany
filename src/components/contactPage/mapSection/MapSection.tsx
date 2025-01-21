@@ -10,7 +10,7 @@ const MapSection = () => {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 className={styles.googleMap}
-                title="Mapa z googlemaps z lokalizacją firmy"
+                title="Map from googlemaps with company location"
             />
         </section>
     )

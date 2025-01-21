@@ -11,11 +11,10 @@ const merriweather = Merriweather({
 })
 
 export const metadata = {
-    title: 'ASGeodezja | Usługi geodezyjne',
+    title: 'PZB Law Company | Homepage',
     description:
-        'Świadczymy najwyższej jakości usługi geodezyjne - mapy, inwentaryzacje, wytyczenia, podziały. Oferujemy atrakcyjne ceny, rzetelność i pełny profesjonalizm.',
+        'Providing exceptional legal services across various practice areas, including corporate law, family law, real estate, and litigation. Our team of experienced attorneys is dedicated to delivering tailored solutions with professionalism and integrity.',
 }
-
 export default function RootLayout({
     children,
 }: Readonly<{

@@ -1,7 +1,7 @@
 import SectionTitle from '../../../components/UI/SectionTitle'
+import ClientOpinion from './ClientOpinion'
 
 import clientsOpinions from '../../../constants/clientsOpinions'
-import ClientOpinion from './ClientOpinion'
 
 import styles from './ClientsSection.module.css'
 
