@@ -8,7 +8,7 @@ const ContactFormSection = () => {
         <section className={styles.section} id="firstsection">
             <div className={styles.wrapper}>
                 <div className={styles.box}>
-                    <SectionTitle center={true}>Write to us!</SectionTitle>
+                    <SectionTitle center={true}>Contact us!</SectionTitle>
                     <ContactForm />
                 </div>
             </div>

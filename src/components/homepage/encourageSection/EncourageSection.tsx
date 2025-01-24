@@ -14,8 +14,9 @@ const EncourageSection = () => {
                 <div className={styles.content}>
                     <p>
                         Choose professional legal assistance you can count on. Our team of attorneys is ready to meet
-                        your needs. Don&apos;t delay - contact us now and give us a chance to resolve your legal issues.
-                        Put your trust in our experienced law firm so you can look to the future with confidence.
+                        your needs. Don&apos;t hesitate - contact us now and give us a chance to resolve your legal
+                        issues. Put your trust in our experienced law firm so you can look to the future with
+                        confidence.
                     </p>
                     <ButtonLink linkUrl="/contact" ariaLabel="Go to contact site" center={true} reverse={true}>
                         Contact us &rarr;

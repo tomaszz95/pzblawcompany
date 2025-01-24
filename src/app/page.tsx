@@ -13,7 +13,7 @@ export const metadata = {
 const Homepage = () => {
     return (
         <main>
-            <Header text="We got solution for your problem!" site="homepage" buttonText="More informations" />
+            <Header text="We got solution for your problem!" site="homepage" buttonText="More information" />
             <IntroductionSection />
             <CompanyOverviewSection />
             <SpecializationSection />
