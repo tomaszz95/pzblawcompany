@@ -5,7 +5,7 @@
 <p>Feel free to explore the live version of the site, hosted on Vercel:  
 <a href="https://pzblawcompany.vercel.app/">PZB Law Company</a>.</p>
 
-<p><strong>Note:</strong> The website is available in - English.</p>
+<p><strong>Note:</strong> The website is available in English.</p>
 
 <h2>📋 Features</h2>
 
