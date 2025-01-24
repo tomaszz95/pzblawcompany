@@ -17,7 +17,7 @@ const membersList = [
         name: 'Emily Wilson',
         position: 'Criminal Law Specialist',
         description:
-            'Lady attorney with a passion for defending human rights in criminal cases. Always ready to stand up for her clients, providing not only professional representation before the court, but also support and understanding in difficult life situations.',
+            'Proffestional attorney with a passion for defending human rights in criminal cases. Always ready to stand up for her clients, providing not only professional representation before the court, but also support and understanding in difficult life situations.',
         image: EmilyWilsonPicture,
     },
     {
