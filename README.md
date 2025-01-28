@@ -28,8 +28,8 @@
 <h2>🛠 Tools and Technologies</h2>
 
 <ul>
-  <li>NextJS</li>
-  <li>ReactJS</li>
+  <li>React</li>
+  <li>Next.js</li>
   <li>TypeScript</li>
   <li>JavaScript</li>
   <li>Git / GitHub</li>
